@@ -9,7 +9,7 @@ TabView = require './tab-view'
 module.exports =
 class TabBarView extends View
   @content: ->
-    @ul tabindex: -1, class: "list-inline tab-bar inset-panel"
+    @ul class: "list-inline tab-bar inset-panel"
 
   initialize: (@pane) ->
     @subscriptions = new CompositeDisposable
